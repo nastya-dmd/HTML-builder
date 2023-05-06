@@ -11,7 +11,7 @@ fs.readdir(pathFilesFolder, { withFileTypes: true }, (err, fileName) => {
     console.error(err);
   } else {
     fileName.forEach(file => {
-      fs.createReadStream(`./04-copy-directory/files/${file.name}`).pipe(fs.createWriteStream(`./04-copy-directory/files-copy/${file.name}`));
+      fs.createReadStream(path.join(__dirname, 'files', file.name)).pipe(fs.createWriteStream(path.join(__dirname, 'files-copy', file.name)));
     });
   }
 });
