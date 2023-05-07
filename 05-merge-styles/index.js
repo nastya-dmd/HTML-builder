@@ -5,7 +5,7 @@ const path = require('path');
   const pathStyles = path.join(__dirname, 'styles');
 
   const resultFilePath = path.join(__dirname, 'project-dist', 'bundle.css');
-  console.log(resultFilePath);
+  // console.log(resultFilePath);
 
   await fs.writeFile(resultFilePath, '', () => { });
   fs.readdir(pathStyles, { withFileTypes: true }, (err, files) => {

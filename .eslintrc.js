@@ -1,7 +1,8 @@
 module.exports = {
   'env': {
     'commonjs': true,
-    'node': true
+    'node': true,
+    'es6': true,
   },
   'extends': 'eslint:recommended',
   'parserOptions': {
@@ -19,6 +20,6 @@ module.exports = {
     'semi': [
       'error',
       'always'
-    ]
+    ],
   }
 };
